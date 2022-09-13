@@ -11,7 +11,7 @@
 }
 
 body {
-  font-family: "Arial", sans-serif;
+  font-family: "MuseoSansCyrl", sans-serif;
   font-weight: 400;
   font-size: 12px;
 }
@@ -169,7 +169,7 @@ b {
 }
 
 .magellano-matrix {
-  font-family: "Arial", sans-serif;
+  font-family: "MuseoSansCyrl", sans-serif;
   width: 100%;
   table-layout: fixed;
   border-collapse: collapse;
@@ -435,7 +435,7 @@ ol {
 
 /* simple-table */
 .simple-table {
-  font-family: "Arial", sans-serif;
+  font-family: "MuseoSansCyrl", sans-serif;
   font-weight: 400;
   width: 100%;
   table-layout: fixed;
