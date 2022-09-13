@@ -1,0 +1,333 @@
+@import "../fonts/fonts.css";
+
+* {
+  /*font-family: "MuseoSansCyrl", sans-serif;*/
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@page {
+  margin: 2rem 3.25rem 0rem 3.25rem;
+}
+
+html {
+  font-size: 16px;
+}
+
+.page {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  page-break-before: always;
+  page-break-after: always;
+}
+
+.first-page {
+  page-break-before: avoid;
+}
+
+.cover {
+  margin-top: 70px;
+  margin-bottom: 24px;
+  display: block;
+}
+
+.title {
+  font-family: "Titillium Web", sans-serif;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 5.625rem;
+  margin-top: 3.75rem;
+  background-image: url(../img/cover.jpg);
+  background-size: cover;
+  -webkit-print-color-adjust: exact;
+  text-align: right;
+  padding-top: 1.875rem;
+  padding-bottom: 1.875rem;
+  padding-right: 5rem;
+  line-height: 8rem;
+}
+
+.sub-title {
+  color: #004379;
+  text-align: right;
+  margin-bottom: 2.5rem;
+  margin-top: 2.5rem;
+  font-size: 1.875rem;
+  line-height: 2rem;
+}
+
+.authors {
+  color: #484848;
+  text-align: right;
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+  margin-right: 0;
+  margin-left: auto;
+  width: 80%;
+  line-height: 1.313rem;
+}
+
+.adopt-authors {
+  color: #878787;
+  text-align: right;
+  margin-bottom: 45px;
+  font-size: 0.9rem;
+  margin-right: 0;
+  margin-left: auto;
+  width: 90%;
+  line-height: 1rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.info-title-bg {
+  padding: 2.5rem 0;
+  background-color: #004379;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 3.5rem;
+  width: 100%;
+  -webkit-print-color-adjust: exact;
+}
+
+.info-title {
+  color: #ffffff;
+  font-weight: 700;
+  margin-right: 2.185rem;
+  font-size: 1.875rem;
+  line-height: 3.125rem;
+}
+
+.questionarie {
+  margin-left: auto;
+  min-width: 48%;
+  font-weight: 600;
+  color: #121212;
+  border-spacing: 0 1.5rem;
+  text-align: left;
+}
+
+.questionarie th {
+  font-weight: 400;
+  color: #484848;
+  vertical-align: top;
+  font-size: 16px;
+}
+.questionarie tr > td:last-child {
+  padding-left: 10px;
+}
+
+.table-divider th,
+.table-divider td {
+  border: 1px solid #004379;
+}
+
+.page-footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  margin-bottom: -50px;
+}
+
+.footer-wrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.testing-logo {
+  height: 50px;
+}
+
+.logo {
+  height: 70px;
+}
+
+.copyright {
+  color: #878787;
+  font-weight: 600;
+}
+
+.divider {
+  width: 100%;
+  border: none;
+  border-top: 1px solid #004379;
+}
+
+.page-header {
+  margin-bottom: 32px;
+}
+
+.header-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-title {
+  color: #004379;
+  font-weight: 600;
+}
+
+.header-test-info {
+  width: 230px;
+  font-weight: 600;
+  color: #121212;
+  border-spacing: 0 1px;
+  text-align: left;
+}
+
+.header-test-info th {
+  font-weight: 400;
+  color: #484848;
+  vertical-align: top;
+}
+
+.content-title {
+  color: #004379;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.chart-name {
+  color: #484848;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.chart {
+  display: block;
+  margin-bottom: 25px;
+}
+
+.chart > svg {
+  overflow: visible;
+}
+
+.result-table {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 32px;
+  padding-right: 25px;
+  table-layout: fixed;
+}
+
+.result-table td {
+  font-weight: 400;
+}
+
+.result-table td:first-of-type {
+  text-align: left;
+  color: #484848;
+}
+
+.result-table th {
+  font-size: 0.625rem;
+  font-weight: 600;
+  color: #121212;
+}
+
+.result-table th:first-of-type {
+  width: 4.5rem;
+}
+
+.answers-stat-table {
+  font-weight: 400;
+  color: #121212;
+}
+
+.answers-stat-table td:nth-of-type(2n) {
+  width: 105px;
+  padding-left: 5px;
+}
+
+.text {
+  color: #484848;
+  margin-bottom: 8px;
+}
+
+.critical-params-table {
+  margin-top: 8px;
+  width: 100%;
+  color: #484848;
+}
+
+.critical-params-table > caption {
+  padding-bottom: 0.7rem;
+}
+
+.critical-params-table td:first-of-type {
+  color: #004379;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 1px;
+  padding-right: 9px;
+}
+
+.critical-params-table td:nth-of-type(2) {
+  width: auto;
+}
+
+.critical-params-table caption {
+  text-align: left;
+  color: #121212;
+  font-weight: 400;
+}
+
+.last-page-title {
+  font-weight: 600;
+  color: #004379;
+  text-align: center;
+
+  margin-bottom: 8px;
+}
+
+.answers-matrix {
+  text-align: center;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.65rem;
+}
+
+.answers-matrix thead {
+  background: #f7f7f7;
+}
+
+.answers-matrix tr:nth-of-type(2n) {
+  background: #f7f7f7;
+}
+
+.answers-matrix th:nth-of-type(2n-1),
+.answers-matrix td:nth-of-type(2n-1) {
+  padding-left: 12px;
+}
+
+.answers-matrix th:nth-of-type(2n),
+.answers-matrix td:nth-of-type(2n) {
+  padding-right: 12px;
+}
+
+.answers-matrix th:first-of-type,
+.answers-matrix td:first-of-type {
+  padding-left: 8px;
+}
+
+.answers-matrix th:last-of-type,
+.answers-matrix td:last-of-type {
+  padding-right: 8px;
+}
+
+.footer-colontitle {
+  margin-top: 4px;
+}

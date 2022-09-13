@@ -1,0 +1,7 @@
+function showDone() {
+    let elemDiv = document.createElement('div');
+    elemDiv.className = 'done'
+    document.body.appendChild(elemDiv);
+}
+
+document.fonts.ready.then(showDone);
